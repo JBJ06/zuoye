@@ -2,63 +2,94 @@
 <html>
 <head>
 <meta charset="utf-8">
-	这是不知道干啥的
-<title>无标题文档</title>
+
+<title>乔纳森·温格高的粉丝团</title>
 	<style>
-		p2{
-			color: #364CB0;
+		body{
+			margin: 0;
+			padding: 40px;
+			padding-top: 0px;
+			background-color:black;
+			box-sizing: border-box;
 		}
-		#image1{
-			position: relative;
-			right: 100px;
+		.container1{
+			display:grid;
+			grid-template-columns: 2fr 2fr 2fr;
+			grid-template-rows: 1000px 400px auto;
+			gap:10px;
+			background-image:url("image/vingegaard.jpg");
+			background-size: cover;
+			
+			
 		}
-		#image2{
+		.containerabove{
+			margin: 0;
+			padding: 0;
+		}
+		.textabove{
+			width: 100%;
+			padding-top: 0.px;
+			background-color: #C6B71C
+		}
+		nav{
+			display: flex;
+			justify-content: space-evenly;
+			margin: 0px;
+			padding: 10px;
+			background-color: #BA8812;
+			
 			position: fixed;
-			top: 120px;
-			right: 20px;
+			width: 100%;
 		}
-		.classtest1{
-			position: fixed;
-			top: 100px;
-			left: 10px;
-			width: 100px;
-			float: left
+		nav a{
+			color: black;
+			text-decoration: none;
+			margin:0 ;
+			background-color: green;
+			border-radius: 10px;
+			padding: 5px;
+			padding-left: 40px;
+			padding-right: 40px;
+			font-size: 20px;
 		}
+		nav a:hover{
+			background-color: cadetblue;
+		}
+		nav a.current{
+			background-color: palevioletred;
+		}
+		button{
+			background-color: black;
+			
+		}
+
 	</style>
 </head>
 
 <body>
-	<h1>这是一个标题</h1>
-	<p>我看看段落</p>
-	<p1 style="color:green;">这是段落吗</p1> <p2>成功使用内样式</p2>
-	<p>换行的,下面一个水平线</p>
-	<hr>
-	<!--注释-->
-	<p>插入单个<br>折行</p>
-	<h2 class="logo">class怎么用</h2><h3 class="stats">数据吗123</h3>
-	<a href="https://www.baidu.com">访问百度</a><br>
-	<img src="image/OIP-C.jpg">
-	<br>
-	<img src="image/OIP-C.jpg" alt="有一个温格高" style="width:300px;">
-	<img  src="image/vingegaard.jpg" alt="另一个温格高" id="image2" style="width:150px">
-	<p style="position: relative;bottom:-20px;left: 30px;background-color: aqua; padding: 5px;width:222px">  这句话实现了定位and ba-co!</p><!--文本及超链接定位-->
-	<a href="https://www.bilibili.com/video/BV1nbete4Exu/?spm_id_from=333.337.search-card.all.click&vd_source=ee4ff010f315d86a4ed9ba2657ea2f50" style="position: relative;left:500px;top: 50px;font-size:50px;background-color: aqua">访问B站温格高视频</a>
+	<nav>
+		<a href="index.html" class="current">主 页</a>
+		<a href="https://www.baidu.com">访问百度</a>
+		<a href="https://www.baidu.com">访问百度</a>
+		<a href="https://www.baidu.com">访问百度</a>
+		<a href="https://www.baidu.com">访问百度</a>
+	</nav>
+	<br><br>
+	<h1 style="text-align: center;font-size: 30px;color: #C6B71C">一位励志的自行车手-乔纳森·温格高</h1>
+	<div class="textabove">
+		<p style="font-size: 25px;color: black;text-align: center">这名来自丹麦的自行车手现效力于维斯马车队，从鱼厂工人到世界最佳车手，他在书写属于自己的丹麦童话</p>
+	</div>
 	
-	<table border="" cellspacing="5px" cellpadding="20px" style="border-collapse: collapse;border-color: #8B0FC5;border-width: 3px;position: relative;bottom: -120px">
-		<tr>
-			<th>年龄</th>
-			<th>年龄</th>
-		</tr>
-		
-		<tr>
-			<td>1.1</td>
-			<td>1.1</td>
-		</tr>
-		<tr>
-			<td>1.1</td>
-			<td>2.0</td>
-		</tr>
-	</table>
-	<img src="image/VINGEGAARD-CRONO-1.jpg" class="classtest1" alt="123">
+	<div class="container1">
+		<div style="background-color: #BA8812;padding: 70px;border-radius: 0px 0px 100px 0px; text-align: center;padding: 0px">
+			<p style="font-size: 29px">欣赏了封面图片后<br>继续选择您感兴趣的内容吧</p>
+			<a href="https://www.baidu.com">
+				<button type="button" style="color: #C6B71C;width: 260px;height: 100px; font-size: 30px">
+					返回宿舍主页
+				</button>
+			</a>
+		</div>
+	</div>
+
 </body>
 </html>
