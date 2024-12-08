@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>获奖记录</title>
+</head>
+	<style>
+		body{
+			margin: 0;
+			padding: 40px;
+			padding-top: 0px;
+			background-color:black;
+			box-sizing: border-box;
+		}
+		.container1{
+			display:grid;
+			grid-template-columns: 2fr 2fr 2fr;
+			grid-template-rows: 1000px 400px auto;
+			gap:10px;
+			background-image:url("../image/vingegaard.jpg");
+			background-size: cover;
+			
+			
+		}
+		.containerabove{
+			margin: 0;
+			padding: 0;
+		}
+		.textabove{
+			width: 100%;
+			padding-top: 0.px;
+			background-color: #C6B71C
+		}
+		nav{
+			display: flex;
+			justify-content: space-evenly;
+			margin: 0px;
+			padding: 10px;
+			background-color: #BA8812;
+			
+			position: fixed;
+			left:0px;
+			top: 0px;
+			width: 100%;
+			
+		}
+		nav a{
+			color: black;
+			text-decoration: none;
+			margin:0 ;
+			background-color: green;
+			border-radius: 10px;
+			padding: 5px;
+			padding-left: 40px;
+			padding-right: 40px;
+			font-size: 20px;
+		}
+		nav a:hover{
+			background-color: cadetblue;
+		}
+		nav a.current{
+			background-color: palevioletred;
+		}
+		.container3{
+			background-image: url("../image/u=2745733936,193501972&fm=253&fmt=auto&app=120&f=JPEG.webp");
+			background-size: cover;
+			width: 1000px;
+			height: 1000px;
+		}
+	</style>
+
+<body>
+	<nav>
+		<a href="../index.html" >主 页</a>
+		<a href="web/1.html">励志故事</a>
+		<a href="web/2.html">趣闻轶事</a>
+		<a href="web/3.html" class="current">获奖记录</a>
+		<a href="https://www.baidu.com">访问百度</a>
+	</nav>
+	<br><br>
+	<div style="background-color:#BA8812; display: flex;justify-content: center;align-items: center">
+		<div class="container3" style="padding: 40px;text-align: center">
+			<p style="font-size: 50px;color: #E61919"><br><br>2024环法亚军</p>
+			<p style="font-size: 50px;color: #E61919">2023环法冠军</p>
+			<p style="font-size: 50px;color: #E61919">2022环法冠军</p>
+			<p style="font-size: 50px;color: #E61919">2021环法亚军</p>
+		</div>
+	</div>
+	
+</body>
+</html>
